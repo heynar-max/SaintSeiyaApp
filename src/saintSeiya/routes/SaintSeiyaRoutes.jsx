@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom"
 import { BronzeSaintPage, GoldSaintPage, HomePage, SaintPage, SearchPage } from "../pages"
+import { Navbar } from "../../ui/components/Navbar"
 
 
 
@@ -10,6 +11,7 @@ import { BronzeSaintPage, GoldSaintPage, HomePage, SaintPage, SearchPage } from 
 const SaintSeiyaRoutes = () => {
     return (
         <>
+            <Navbar/>
             <div className="router_container">
                 <Routes>
                     <Route path="/" element={<HomePage/>}/>

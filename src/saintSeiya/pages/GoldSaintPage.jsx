@@ -1,7 +1,13 @@
+import { SaintList } from "../components"
 
 
 export const GoldSaintPage = () => {
     return (
-        <div>GoldSaintPage</div>
+        <>
+            <h1> Gold Saint</h1>
+            <hr/>
+
+            <SaintList rango='Gold Saints'/>
+        </>
     )
 }

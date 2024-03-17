@@ -1,8 +1,14 @@
+import { SaintList } from "../components"
 
 
 export const BronzeSaintPage = () => {
     return (
-        <div>BronceSaintPage</div>
+        <>
+            <h1> Bronze saints</h1>
+            <hr/>
+
+            <SaintList rango='Bronze Saints'/>
+        </>
     )
 }
 
