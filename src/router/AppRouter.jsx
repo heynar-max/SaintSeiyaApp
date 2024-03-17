@@ -1,8 +1,7 @@
-import { Navigate, Route, Routes } from "react-router-dom"
-import { HomePage } from "../saintSeiya/pages/HomePage"
+import { Route, Routes } from "react-router-dom"
 import { Navbar } from "../ui/components/Navbar"
-import BronzeSaintPage from "../saintSeiya/pages/BronzeSaintPage"
-import GoldSaintPage from "../saintSeiya/pages/GoldSaintPage"
+import LoginPage from "../auth/pages/LoginPage"
+import SaintSeiyaRoutes from "../saintSeiya/routes/SaintSeiyaRoutes"
 
 
 const AppRouter = () => {
@@ -10,12 +9,10 @@ const AppRouter = () => {
         <>
             <Navbar/>
             <Routes>
-                <Route path="/" element={<HomePage/>}/>
-                <Route path="bronze" element={<BronzeSaintPage/>}/>
-                <Route path="gold" element={<GoldSaintPage/>}/>
+                <Route path="login" element={<LoginPage/>}/>
 
 
-                <Route path="/*" element={<Navigate to="/"/>}/>
+                <Route path="/*" element={<SaintSeiyaRoutes/>}/>
             </Routes>
         </>
     )

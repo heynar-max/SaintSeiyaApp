@@ -15,3 +15,7 @@ background-color: var(--primer-color);
 margin: 0px;
 padding: 0;
 }
+
+.router_container{
+    padding: 2rem;
+}

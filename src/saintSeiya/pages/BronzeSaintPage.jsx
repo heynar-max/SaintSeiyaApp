@@ -1,9 +1,8 @@
 
 
-const BronzeSaintPage = () => {
+export const BronzeSaintPage = () => {
     return (
         <div>BronceSaintPage</div>
     )
 }
 
-export default BronzeSaintPage
