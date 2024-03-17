@@ -1,0 +1,41 @@
+.nav_header{
+    background-color: var(--segundo-color);
+    border-bottom-style: inset;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    margin: auto;
+    position: sticky;
+    align-items: center;
+    top: 0;
+    z-index: 1;
+    padding: 1rem;
+}
+
+.nav_link{
+    text-decoration: none;
+    color: var(--tercer-color);
+}
+
+.navbar-nav{
+    display: flex;
+    
+}
+.nav-item{
+    display: flex;
+    margin-right: 2rem;
+    text-decoration: none;
+    color: var(--tercer-color);
+    font-size: 1.1rem;
+}
+
+.nav-item.active {
+    color: var(--primer-color); /* Cambia el color de texto cuando el enlace esté activo */
+    font-weight: bold; /* Cambia el peso de la fuente cuando el enlace esté activo */
+    
+}
+
+.nav-item:hover {
+    color: var(--cuarto-color); /* Cambia el color de texto cuando el enlace activo se está volviendo a pasar por encima */
+    
+}

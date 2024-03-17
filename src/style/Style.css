@@ -1,0 +1,17 @@
+:root{
+    --primer-color: #ffffff;
+    --segundo-color: #090909;
+    --tercer-color: #6a6a6a;
+    --cuarto-color: #ffd900;
+}
+html *{
+font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400
+
+}
+
+body{
+background-color: var(--primer-color);
+margin: 0px;
+padding: 0;
+}
