@@ -1,23 +1,25 @@
 import { getSaintByRango } from "../helpers"
 import PropTypes from 'prop-types';
+import { SaintCard } from "./SaintCard";
 
 
 export const SaintList = ({ rango }) => {
 
     const saints = getSaintByRango( rango )
     return (
-        <ul>
+        <div className="cards__card">
             {
                 saints.map( saint => (
-                    <li key={saint.id}>
-                        {saint.caballero}
-                    </li>
+                    <SaintCard
+                        key={saint.id}
+                        {...saint}
+                    />
                 ))
             }
-        </ul>
+        </div>
     )
 }
 
 SaintList.propTypes = {
-    rango: PropTypes.string.isRequired, // Assuming rango is a string, adjust if it's a different type
+    rango: PropTypes.string.isRequired, 
 };

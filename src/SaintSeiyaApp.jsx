@@ -1,5 +1,5 @@
 import AppRouter from "./router/AppRouter"
-import './style/index.js'
+import './style/Style.css'
 
 
 const SaintSeiya = () => {

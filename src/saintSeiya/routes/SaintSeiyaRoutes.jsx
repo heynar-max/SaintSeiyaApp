@@ -21,7 +21,7 @@ const SaintSeiyaRoutes = () => {
                     <Route path="saint" element={<SaintPage/>}/>
 
 
-                    <Route path="/*" element={<Navigate to="/"/>}/>
+                    <Route path="/" element={<Navigate to="/"/>}/>
                 </Routes>
             </div>
         </>
