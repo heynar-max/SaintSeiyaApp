@@ -18,7 +18,7 @@ const SaintSeiyaRoutes = () => {
                     <Route path="bronze" element={<BronzeSaintPage/>}/>
                     <Route path="gold" element={<GoldSaintPage/>}/>
                     <Route path="search" element={<SearchPage/>}/>
-                    <Route path="saint" element={<SaintPage/>}/>
+                    <Route path="saint/:id" element={<SaintPage/>}/>
 
 
                     <Route path="/" element={<Navigate to="/"/>}/>
